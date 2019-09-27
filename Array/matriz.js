@@ -20,3 +20,5 @@ for (var row = 0; row < donutBox.length; row++) {
       console.log(donutBox[row][column]);
     }
   }
+
+  //row é a linha e column é a coluna.
