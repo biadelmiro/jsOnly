@@ -1,3 +1,7 @@
+//adicione um método printAccountSummary() que retorne a seguinte mensagem de conta:
+
+//Welcome!
+//Your balance is currently $1000 and your interest rate is 1%.
 
 var savingsAccount = {
     balance: 1000,
