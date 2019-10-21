@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tudo">
+        <div class="form">
+            <form>
+                <label>Apelido</label> <br/>
+                <input type="text" class="inputs" id="apld"/><br/>
+                <label>Sexo</label><br/>
+                <select>
+                        <option id="F">Feminino</option>
+                        <option id="M">Masculino</option>
+                </select>
+                <button class="botao">Finalizar</button>
+            </form>
+        <script>
+            var inputApld = document.querySelector('input[id=apld]');
+            var inputbotao = document.querySelector('button.botao');
+
+            /*inputbotao.onclick = function (){
+                var mostra = inputApld.value;
+
+                alert('Olá ' + mostra + ', seja bem vindo(a)!');
+            }
+'*/
+            var inputfeminino = document.querySelector('option[id=F]');
+            var inputMasculino = document.querySelector('option[id=M]');
+
+            inputbotao.onclick = function(){
+                var apelido = inputApld.value;
+                var M = inputMasculino.value;
+                var F = inputfeminino.value;
+
+
+                //alert('Olá ' + M + ' seja bem vindo!');
+                if (a == "Masculino"){
+                    alert('Olá ' + apelido + ' seja bem vindo!');
+                
+                }
+                else {
+                    alert('Olá ' + apelido + ' seja bem vindA!');
+                }
+                }
+        </script>
+        </div>
+    </div>
+</body>
+</html>
