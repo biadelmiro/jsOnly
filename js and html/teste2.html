@@ -20,38 +20,28 @@
                 <button class="botao">Finalizar</button>
             </form>
         <script>
+            // CHAMANDO APELIDO
             var inputApld = document.querySelector('input[id=apld]');
+            // CHAMANDO BOTÃO
             var inputbotao = document.querySelector('button.botao');
-
-            /*inputbotao.onclick = function (){
-                var mostra = inputApld.value;
-
-                alert('Olá ' + mostra + ', seja bem vindo(a)!');
-            }
-'*/
+            // CHAMANDO FEMININO E MASCULINO
             var inputfeminino = document.querySelector('option[id=F]');
             var inputMasculino = document.querySelector('option[id=M]');
+            // CHAMANDO OPTION DO SELECT
             var inputOption = document.querySelectorAll('select option');
+
+           // AO CLICAR O BOTÃO
 
             inputbotao.onclick = function(sex){
                 
                 var apelido = inputApld.value;
-                //var M = inputMasculino.value;
-                //var F = inputfeminino.value;
                 var sexo = inputOption.value;
                 if (sexo == 'Masculino'){
                     alert('Olá ' + apelido + ' seja bem vindo!');
                 } else {
                     alert('Olá ' + apelido + ' seja bem vindA!');
                 }
-                //alert('Olá ' + apelido + ' seja bem vindo!');
-                //alert('Olá ' + M + ' seja bem vindo!');
-               /* if (M == "Masculino"){
-                    alert('Olá ' + apelido + ' seja bem vindo!');
-                }
-                else {
-                    alert('Olá ' + apelido + ' seja bem vindA!');
-                } */
+              
                 }
         </script>
         </div>
