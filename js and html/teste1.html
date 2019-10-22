@@ -29,20 +29,25 @@
                 alert('Olá ' + mostra + ', seja bem vindo(a)!');
             }
 '*/
-            var inputfeminino = document.querySelector('option[id=F]');
-            var inputMasculino = document.querySelector('option[id=M]');
+            var inputfeminino = document.querySelector('option[id=F]').value;
+            var inputMasculino = document.querySelector('option[id=M]').value;
             var inputOption = document.querySelectorAll('select option');
 
-            inputbotao.onclick = function(sex){
+            inputbotao.onclick = function(){
                 
                 var apelido = inputApld.value;
                 //var M = inputMasculino.value;
                 //var F = inputfeminino.value;
-                var sexo = inputOption.value;
-                if (sexo == 'Masculino'){
-                    alert('Olá ' + apelido + ' seja bem vindo!');
-                } else {
-                    alert('Olá ' + apelido + ' seja bem vindA!');
+                var sexo1 = inputfeminino.value;
+                var sexo2 = inputMasculino.value
+
+                if (sexo1 != '' && sexo1 == 'Feminino'){
+                    alert('Olá ' + apelido + ' seja bem vindaaaaaaaa!');
+                  
+                } 
+                if (sexo2 != '' && sexo2 == 'Masculino'){
+                 alert('Olá ' + apelido + ' seja bem vindooooo!');
+                  
                 }
                 //alert('Olá ' + apelido + ' seja bem vindo!');
                 //alert('Olá ' + M + ' seja bem vindo!');

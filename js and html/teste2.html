@@ -13,9 +13,9 @@
                 <label>Apelido</label> <br/>
                 <input type="text" class="inputs" id="apld"/><br/>
                 <label>Sexo</label><br/>
-                <select>
-                        <option id="F">Feminino</option>
-                        <option id="M">Masculino</option>
+                <select id="selected">
+                        <option >Feminino</option>
+                        <option >Masculino</option>
                 </select>
                 <button class="botao">Finalizar</button>
             </form>
@@ -25,23 +25,27 @@
             // CHAMANDO BOTÃO
             var inputbotao = document.querySelector('button.botao');
             // CHAMANDO FEMININO E MASCULINO
-            var inputfeminino = document.querySelector('option[id=F]');
-            var inputMasculino = document.querySelector('option[id=M]');
+            //var inputfeminino = document.querySelector('option[id=F]');
+            //var inputMasculino = document.querySelector('option[id=M]');
+            
+            var valor =  document.getElementById('selected').value;
+       
             // CHAMANDO OPTION DO SELECT
-            var inputOption = document.querySelectorAll('select option');
+            //var inputOption = document.querySelectorAll('select option');
 
            // AO CLICAR O BOTÃO
 
-            inputbotao.onclick = function(sex){
+            inputbotao.onclick = function(){
                 
                 var apelido = inputApld.value;
-                var sexo = inputOption.value;
-                if (sexo == 'Masculino'){
-                    alert('Olá ' + apelido + ' seja bem vindo!');
+               alert('Olá ' + valor);
+                /*var sexo = valor;
+                if (valor == "1"){
+                    alert('Olá ' + apelido + ' seja bem vindAAAAAA!');
                 } else {
-                    alert('Olá ' + apelido + ' seja bem vindA!');
+                    alert('Olá ' + apelido + ' seja bem vindo!');
                 }
-              
+                */
                 }
         </script>
         </div>
