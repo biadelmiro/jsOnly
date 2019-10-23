@@ -1,0 +1,23 @@
+<hmtl> 
+        <script> 
+        function AdicionaSelect(){ 
+         var i = document.form.select.selectedIndex; 
+         var j = document.form.txtarea.value;
+             j += document.form.select[i].text; 
+         document.form.txtarea.value = j + "\n";
+        } 
+        </script> 
+         
+        <body> 
+        <form name="form"> 
+          <select name="select"> 
+           <option value="MG">Minas Gerais</option> 
+           <option value="RJ">Rio de Janeiro</option> 
+           <option value="SP">São Paulo</option> 
+          </select> 
+          </br>
+          <textarea name="txtarea" cols="30" rows="5"></textarea> 
+        </form> 
+        <input name="add" type="button" onClick="AdicionaSelect()" value="Adicionar">
+        </body> 
+        </html>

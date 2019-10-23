@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tudo">
+        <div class="form">
+            <form>
+                <label>Apelido</label> <br/>
+                <input type="text" class="apld"/><br/>
+                <label>Nome Completo</label><br/>
+                <input type="text" class="nome"><br/>
+                <label>E-mail</label><br/>
+                <input type="text" class="email"><br/>
+                <label>Sexo</label><br/>
+                <select class="sex">
+                        <option value="F">Feminino</option>
+                        <option value="M">Masculino</option>
+                </select>
+                <button class="botao" onclick="aciona">Finalizar</button>
+            </form>
+            <div class="text">
+
+            </div>
+        <script>
+            function aciona(){
+                var apelido = document.getElementsByClassName('apld').value;
+                var nomeCompleto = document.getElementsByClassName('nome').value;
+                var email = document.getElementsByClassName('email').value;
+                var sexo = document.getElementsByClassName('sex').value;
+                alert('AA '+ apelido);
+            }
+        </script>
+        </div>
+    </div>
+</body>
+</html>
